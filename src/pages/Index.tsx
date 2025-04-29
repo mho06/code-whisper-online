@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import { Button } from '@/components/ui/button';
+import { textToMorse } from '@/utils/morseCodeUtils';
 
 const Index = () => {
   const navigate = useNavigate();
