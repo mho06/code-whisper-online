@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -7,7 +6,8 @@ import { Input } from '@/components/ui/input';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { PlayIcon, HelpCircle, CheckIcon, XIcon } from 'lucide-react';
 import { toast } from 'sonner';
-import { quizQuestions, playMorseAudio, MorseVisual } from '@/utils/morseCodeUtils';
+import { quizQuestions, playMorseAudio } from '@/utils/morseCodeUtils';
+import { MorseVisual } from '@/utils/morseCodeUtils';
 
 const QuizGame = () => {
   const [difficulty, setDifficulty] = useState<'easy' | 'medium' | 'hard'>('easy');

@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useRef } from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -8,7 +7,8 @@ import { Avatar } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
 import { PlayIcon, X, MessageSquare, User } from 'lucide-react';
 import { toast } from 'sonner';
-import { textToMorse, morseToText, playMorseAudio, MorseVisual } from '@/utils/morseCodeUtils';
+import { textToMorse, morseToText, playMorseAudio } from '@/utils/morseCodeUtils';
+import { MorseVisual } from '@/utils/morseCodeUtils';
 
 // Mock user data (in a real app this would come from authentication)
 const currentUser = {

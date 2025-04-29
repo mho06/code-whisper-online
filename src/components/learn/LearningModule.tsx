@@ -7,7 +7,8 @@ import { Input } from '@/components/ui/input';
 import { Progress } from '@/components/ui/progress';
 import { CheckIcon, PlayIcon, XIcon } from 'lucide-react';
 import { toast } from 'sonner';
-import { learningModules, textToMorse, playMorseAudio, MorseVisual } from '@/utils/morseCodeUtils';
+import { learningModules, textToMorse, playMorseAudio } from '@/utils/morseCodeUtils';
+import { MorseVisual } from '@/utils/morseCodeUtils';
 import { useNavigate } from 'react-router-dom';
 
 const LearningModule = () => {
